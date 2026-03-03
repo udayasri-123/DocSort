@@ -1,0 +1,7 @@
+Flask
+flask-cors
+numpy
+scikit-learn
+gensim
+firebase-admin
+gunicorn

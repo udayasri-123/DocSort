@@ -1,0 +1,55 @@
+/* AboutUsPage.css */
+.about-container {
+    padding: 40px;
+    background-color: #f0f8ff;
+    text-align: center;
+  }
+  
+  .about-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2688d2;
+  }
+  
+  .about-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .about-goal {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  .team-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+  
+  .team-list li {
+    margin-bottom: 10px;
+  }
+  
+  .team-list li::before {
+    content: "• ";
+    color: #50e3c2;
+  }
+  
+  .back-btn {
+    margin-top: 20px;
+  }
+  
+  .back-btn a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #50e3c2;
+  }
+  
+  .back-btn a:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,215 @@
+/* General Styles for Login Container */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: whitesmoke;
+  background-image: url(../assets/background2.jpg);
+  
+}
+
+/* Form Container */
+.login-form-container {
+  background-color:white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Title */
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  color: #355c7d !important;
+  
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 1.2rem;
+  text-align: left;
+}
+
+/* General Input Field Styling */
+/* General Input Field Styling */
+input {
+  width: 100%; /* Ensure both fields have the same width */
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensures padding is included in the input width */
+  margin-bottom: 1.0rem; /* Adds spacing between fields */
+  transition: border-color 0.3s ease;
+  color: #333;  /* Text color */
+  background-color: white;  /* Default background color */
+  outline: none;
+}
+
+input:focus {
+  border-color: #fff; /* White outline when focused */
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Adds a subtle glow effect */
+  color: #020d12; /* Change text color on focus */
+  background-color: #ffffff;  /* Change background color to white when focused */
+}
+input:focus-visible {
+  outline: none; /* Ensures there's no outline even in browsers that show a focus ring */
+  box-shadow: none; /* Remove any default box-shadow in focus-visible */
+}
+
+
+/* Password Input Adjustment */
+.password-input {
+  position: relative;
+  width: 100%; /* Ensure the container takes the full width */
+}
+
+.password-input input {
+  padding-right: 40px; /* Reserved space for the toggle icon */
+  width: 100%; /* Full width */
+  padding: 14px; /* Ensure same padding for consistency */
+  font-size: 16px; /* Same font size */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 1.0rem; /* Adjusted margin */
+}
+
+/* Password Toggle Icon */
+.password-toggle-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.password-toggle-icon:hover {
+  color: #021103;  /* Change the color when hovered for better visibility */
+  transition: color 0.3s ease;
+}
+
+/* Remember Me and Forgot Password in Same Line */
+.form-remember-forgot {
+  display: flex;
+  justify-content: space-between; /* Ensure space between elements */
+  align-items: center;
+  width:100%;
+  margin-bottom: 0.5rem; /* Increased margin for better spacing */
+  
+}
+
+/* Remember Me Styling */
+.remember-me {
+  display: flex;
+  align-items: left; /* Align checkbox and text inline */
+  font-size: 14px; /* Same font size as other text */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.remember-me input {
+  margin-right: 8px; /* Space between checkbox and label */
+}
+
+/* Forgot Password Link */
+.form-remember-forgot a {
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+}
+
+.form-remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px 0;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn {
+  background-color: #355c7d;
+  color: white;
+}
+
+.login-btn:disabled {
+  background-color: whitesmoke;
+  opacity: 0.7;
+}
+
+.google-login-btn {
+  background-color: #355c7d;
+  color: #ffff;
+  border: 1px solid #d3d3d3;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.google-login-btn:hover {
+  background-color: #355c7d;
+  transform: scale(1.02);  /* Slightly enlarges the button */
+}
+
+/* Google Button Logo */
+.google-login-btn img {
+  width: 20px; /* Adjust size of Google logo */
+}
+
+
+/* Error Message */
+.error-message {
+  color: red;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem; /* Increased font size for better visibility */
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  /* Responsive Design for Mobile */
+  .login-form-container {
+    padding: 1.5rem;
+    width: 100%;
+    max-width: none;
+  }
+
+  .google-login-btn {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 20px;  /* Adjust title size for mobile */
+  }
+
+  .login-btn, .google-login-btn {
+    font-size: 14px;  /* Reduce button font size on mobile */
+  }
+
+  input {
+    font-size: 12px;  /* Adjust input field font size */
+  }
+
+  .error-message {
+    font-size: 1.5rem; /* Increase size on small screens for better visibility */
+  }
+}
